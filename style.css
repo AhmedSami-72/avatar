@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Sigmar&family=Ubuntu:ital@1&display=swap');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    background-image: linear-gradient(to right, #01022d, #000);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    background-image: linear-gradient(to right, #01022de5 30%, #00000088), url(download.webp);
+    background-position: center;
+    height: 640px;
+    width: 90%;
+}
+
+.container:hover {
+    background-image: linear-gradient(to right, #01022de5 30%, transparent), url(download.webp);
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.logo:hover{
+    text-shadow: 2px 2px #ffffff;
+}
+
+ul {
+    width: 55%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul a {
+    border-bottom: 2px solid transparent;
+    transition: all .2s;
+
+}
+
+ul a:hover {
+    border-bottom-color: white;
+
+}
+
+.content {
+    color: white;
+    width: 50%;
+    margin: 50px;
+    padding: 30px;
+}
+
+.content h2 {
+    font-size: 95px;
+    text-transform: uppercase;
+}
+
+.content p {
+    letter-spacing: 3px;
+    width: 350px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+/* button style */
+
+.content button {
+    cursor: pointer; 
+    position: relative;
+    padding: 12px 35px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #181818;
+    border: 3px solid transparent;
+    border-radius: 8px;
+    box-shadow: 0 0 0 #fffdef;
+    transition: all .3s ease-in-out;
+}
+
+button:hover {
+    box-shadow: 0 0 25px #ffffff;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+}
+
+.star-1 {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+}
+
+.star-2 {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+}
+
+.star-3 {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+}
+
+.star-4 {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all .8s cubic-bezier(0, 0.4, 0, 1.01);
+}
+
+.star-5 {
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all .6s cubic-bezier(0, 0.4, 0, 1.01);
+}
+
+.star-6 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all .8s ease;
+}
+
+
+button:hover .star-1 {
+    position: absolute;
+    top: -80%;
+    left: -30%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+}
+
+button:hover .star-2 {
+    position: absolute;
+    top: -25%;
+    left: 10%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+}
+
+button:hover .star-3 {
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+}
+
+button:hover .star-4 {
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+}
+
+button:hover .star-5 {
+    position: absolute;
+    top: 25%;
+    left: 115%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+}
+
+button:hover .star-6 {
+    position: absolute;
+    top: 5%;
+    left: 60%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+}
+
+.fil0 {
+    fill: #FFFDEF
+}
+
+
+/* loading page */
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #01022d, #000);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sk-cube-grid {
+    width: 120px;
+    height: 120px;
+}
+
+.sk-cube {
+    width: 33%;
+    height: 33%;
+    background-color: white;
+    float: left;
+    animation: sk-cube-grid-multiple-delay 1.3s infinite ease-in-out;
+}
+
+.sk-cube1 {
+    animation-delay: 0.2s;
+}
+
+.sk-cube2 {
+    animation-delay: 0.3s;
+}
+
+.sk-cube3 {
+    animation-delay: 0.4s;
+}
+
+.sk-cube4 {
+    animation-delay: 0.1s;
+}
+
+.sk-cube5 {
+    animation-delay: 0.2s;
+}
+
+.sk-cube6 {
+    animation-delay: 0.3s;
+}
+
+.sk-cube7 {
+    animation-delay: 0s;
+}
+
+.sk-cube8 {
+    animation-delay: 0.1s;
+}
+
+.sk-cube9 {
+    animation-delay: 0.2s;
+}
+
+@keyframes sk-cube-grid-multiple-delay {
+    0%, 70%, 100% {
+        transform: scale3D(1, 1, 1);
+    } 35% {
+        transform: scale3D(0, 0, 1);
+    }
+}
